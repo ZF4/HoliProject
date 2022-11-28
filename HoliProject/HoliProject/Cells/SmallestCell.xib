@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SmallestCell" customModule="HoliProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="91"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WVd-P7-UfW">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="91"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunscreen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9io-Ra-MLs">
+                                <rect key="frame" x="21" y="54" width="121" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="P9R-IQ-4Ux"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shape" translatesAutoresizingMaskIntoConstraints="NO" id="jcS-YU-yGK">
+                                <rect key="frame" x="17" y="17" width="31" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="Txr-U4-IwA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jcS-YU-yGK" firstAttribute="top" secondItem="WVd-P7-UfW" secondAttribute="top" constant="17" id="1gT-Yx-neI"/>
+                            <constraint firstAttribute="bottom" secondItem="9io-Ra-MLs" secondAttribute="bottom" constant="19" id="Bt6-Tg-xHV"/>
+                            <constraint firstItem="9io-Ra-MLs" firstAttribute="top" secondItem="jcS-YU-yGK" secondAttribute="bottom" constant="11" id="KZs-8p-uLp"/>
+                            <constraint firstItem="9io-Ra-MLs" firstAttribute="leading" secondItem="WVd-P7-UfW" secondAttribute="leading" constant="21" id="MTO-kD-3DU"/>
+                            <constraint firstAttribute="trailing" secondItem="9io-Ra-MLs" secondAttribute="trailing" constant="8" id="RYr-vR-PW3"/>
+                            <constraint firstItem="jcS-YU-yGK" firstAttribute="leading" secondItem="WVd-P7-UfW" secondAttribute="leading" constant="17" id="XWD-5N-vb4"/>
+                            <constraint firstAttribute="trailing" secondItem="jcS-YU-yGK" secondAttribute="trailing" constant="102" id="tjK-B8-Wwo"/>
+                            <constraint firstItem="9io-Ra-MLs" firstAttribute="top" secondItem="jcS-YU-yGK" secondAttribute="bottom" constant="11" id="xda-ad-2qy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="systemGray3Color"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="WVd-P7-UfW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8oS-Jt-eEv"/>
+                <constraint firstAttribute="bottom" secondItem="WVd-P7-UfW" secondAttribute="bottom" id="gfm-Rf-jFC"/>
+                <constraint firstAttribute="trailing" secondItem="WVd-P7-UfW" secondAttribute="trailing" id="ibI-kc-d4B"/>
+                <constraint firstItem="WVd-P7-UfW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rtD-eC-xjt"/>
+            </constraints>
+            <point key="canvasLocation" x="100.76335877862596" y="19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Shape" width="26" height="26"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

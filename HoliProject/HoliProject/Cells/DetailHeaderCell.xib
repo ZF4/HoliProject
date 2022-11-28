@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="DetailHeaderCell" customModule="HoliProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6f-Mn-b21">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dop-S4-m2u">
+                                <rect key="frame" x="27" y="31" width="321" height="26.666666666666671"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrow.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PAE-Iv-lrF">
+                                        <rect key="frame" x="0.0" y="3" width="20" height="21"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26.670000000000002" id="giJ-PR-J2U"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Hiking Event • Expert Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5M9-2e-eiv">
+                                        <rect key="frame" x="46" y="3" width="212" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="514-ET-dYn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="752" image="bookmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GGk-hB-Ity">
+                                        <rect key="frame" x="298" y="2.9999999999999964" width="17.333333333333314" height="21"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21.329999999999998" id="4rv-Ws-nTU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="GGk-hB-Ity" firstAttribute="leading" secondItem="5M9-2e-eiv" secondAttribute="trailing" constant="40" id="4DE-ra-q2T"/>
+                                    <constraint firstItem="GGk-hB-Ity" firstAttribute="top" secondItem="dop-S4-m2u" secondAttribute="top" constant="2.6699999999999999" id="Azg-1R-cgj"/>
+                                    <constraint firstItem="PAE-Iv-lrF" firstAttribute="leading" secondItem="dop-S4-m2u" secondAttribute="leading" id="Osr-UZ-HwN"/>
+                                    <constraint firstItem="GGk-hB-Ity" firstAttribute="leading" secondItem="5M9-2e-eiv" secondAttribute="trailing" constant="40" id="Zkk-ht-bA9"/>
+                                    <constraint firstItem="PAE-Iv-lrF" firstAttribute="top" secondItem="dop-S4-m2u" secondAttribute="top" id="Zxp-H1-YEF"/>
+                                    <constraint firstAttribute="trailing" secondItem="GGk-hB-Ity" secondAttribute="trailing" constant="5.6699999999999999" id="aEi-9U-h2M"/>
+                                    <constraint firstAttribute="height" constant="26.670000000000002" id="dth-bf-u3I"/>
+                                    <constraint firstItem="5M9-2e-eiv" firstAttribute="leading" secondItem="PAE-Iv-lrF" secondAttribute="trailing" constant="26" id="imt-gG-3AE"/>
+                                    <constraint firstItem="5M9-2e-eiv" firstAttribute="top" secondItem="dop-S4-m2u" secondAttribute="top" constant="3" id="xcw-NP-yfV"/>
+                                    <constraint firstItem="5M9-2e-eiv" firstAttribute="leading" secondItem="PAE-Iv-lrF" secondAttribute="trailing" constant="26" id="yvC-i1-VPf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dop-S4-m2u" secondAttribute="trailing" constant="27" id="2YP-8q-7Hm"/>
+                            <constraint firstItem="dop-S4-m2u" firstAttribute="leading" secondItem="v6f-Mn-b21" secondAttribute="leading" constant="27" id="Fkj-2h-tft"/>
+                            <constraint firstItem="dop-S4-m2u" firstAttribute="top" secondItem="v6f-Mn-b21" secondAttribute="top" constant="31" id="Udf-gJ-Tt1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="v6f-Mn-b21" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="54l-rn-BjI"/>
+                <constraint firstItem="v6f-Mn-b21" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="U2J-Wr-NVm"/>
+                <constraint firstAttribute="trailing" secondItem="v6f-Mn-b21" secondAttribute="trailing" id="ks3-6Y-zwi"/>
+                <constraint firstAttribute="bottom" secondItem="v6f-Mn-b21" secondAttribute="bottom" id="yNf-fP-kMQ"/>
+            </constraints>
+            <point key="canvasLocation" x="125.95419847328243" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

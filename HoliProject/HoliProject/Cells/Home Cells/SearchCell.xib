@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SearchCell" id="gTV-IL-0wX" customClass="SearchCell" customModule="HoliProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a12-Is-vih">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlr-qm-uV5">
+                                <rect key="frame" x="24" y="0.0" width="327" height="47"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aSD-dS-WjE">
+                                        <rect key="frame" x="12" y="13.999999999999998" width="21" height="21"/>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22.670000000000002" id="0e9-CJ-WED"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search your location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ow0-DP-J0F">
+                                        <rect key="frame" x="47" y="15" width="135.66666666666666" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="UjH-dp-2w2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Ced-lp-NV5"/>
+                                    <constraint firstItem="aSD-dS-WjE" firstAttribute="leading" secondItem="hlr-qm-uV5" secondAttribute="leading" constant="12" id="Eb4-v8-Amu"/>
+                                    <constraint firstAttribute="trailing" secondItem="ow0-DP-J0F" secondAttribute="trailing" constant="144.33000000000001" id="F8r-Xc-7uh"/>
+                                    <constraint firstItem="ow0-DP-J0F" firstAttribute="leading" secondItem="aSD-dS-WjE" secondAttribute="trailing" constant="14" id="L8a-Or-xnH"/>
+                                    <constraint firstItem="ow0-DP-J0F" firstAttribute="leading" secondItem="aSD-dS-WjE" secondAttribute="trailing" constant="14" id="Y2v-OH-2w7"/>
+                                    <constraint firstItem="ow0-DP-J0F" firstAttribute="top" secondItem="hlr-qm-uV5" secondAttribute="top" constant="15" id="ujf-W8-RcC"/>
+                                    <constraint firstItem="aSD-dS-WjE" firstAttribute="top" secondItem="hlr-qm-uV5" secondAttribute="top" constant="13" id="wN1-9i-GT1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemGray2Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hlr-qm-uV5" firstAttribute="top" secondItem="a12-Is-vih" secondAttribute="top" id="RXJ-W4-Rdu"/>
+                            <constraint firstItem="hlr-qm-uV5" firstAttribute="leading" secondItem="a12-Is-vih" secondAttribute="leading" constant="24" id="lMT-EV-41N"/>
+                            <constraint firstAttribute="trailing" secondItem="hlr-qm-uV5" secondAttribute="trailing" constant="24" id="xnH-kq-QvX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="a12-Is-vih" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4xP-R1-ArH"/>
+                <constraint firstAttribute="trailing" secondItem="a12-Is-vih" secondAttribute="trailing" id="Sgz-DZ-65Y"/>
+                <constraint firstAttribute="bottom" secondItem="a12-Is-vih" secondAttribute="bottom" id="XxC-JF-wdx"/>
+                <constraint firstItem="a12-Is-vih" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nwc-ic-8Jv"/>
+            </constraints>
+            <point key="canvasLocation" x="61.832061068702288" y="19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
